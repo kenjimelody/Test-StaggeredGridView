@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    compile 'com.android.support:support-v4:19.1.+'
+}
+
+version = VERSION_NAME
+group = GROUP
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        minSdkVersion 10
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+apply from: 'https://raw.githubusercontent.com/denizmveli/gradle-mvn-push/master/gradle-mvn-push.gradle'
